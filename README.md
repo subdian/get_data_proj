@@ -13,6 +13,8 @@ This file contains an R script that will produce a tidy data set from the raw da
 
 If the UCI-HAR zip has been extracted, and its contents are in the same directory as the R script when run, then a tidy dataset will be produced called UCI-HAR-tidy.txt
 
+This file can then be read into R using read.table("UCI-HAR-tidy.txt")
+
 #### CodeBook.md
 This file explains what the variables in the tidy datset correspond to.
 
