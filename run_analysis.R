@@ -78,5 +78,10 @@ colnames(mean_std_data)[3:68] <- tidy_feature_names
 
 
 #5 Creates a second, independent tidy data set with the average of each variable for each activity and each subject
-tidy_mean <- aggregate(.~Subject+Activity, FUN=mean, data=mean_std_data)
+#5.1 Use aggregate function to group and average the data
+tidy_mean_df <- aggregate(.~Subject+Activity, FUN=mean, data=mean_std_data)
+
+#5.2 Output data set to file
+write.table(tidy_mean_df, "UCI_HAR_tidy.txt")
+
 
