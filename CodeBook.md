@@ -45,6 +45,10 @@ The remaining variables below were derived from the origin UCI-HAR data set, and
 > fBodyGyroMag  
 > fBodyGyroJerkMag  
 > ```
+> The set of variables that were estimated from these signals are: 
+> 
+> mean(): Mean value
+> std(): Standard deviation
 
 These data were further processed as follows:
 
