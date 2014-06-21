@@ -1,11 +1,14 @@
 # DATA DICTIONARY - UCI-HAR TIDY DATA SET
 
-Subject		
+```Subject		
 	Subject identifier
 			1...147		Integer representing the subject 
-Activity
+```			
+
+```Activity
 	Activity for which the measurement was made
 			One of LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
+```
 
 The remaining variables below were derived from the origin UCI-HAR data set, and were described as follows:
 
