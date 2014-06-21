@@ -15,7 +15,7 @@ If the UCI-HAR zip has been extracted, and its contents are in the same director
 
 This file can then be read into R using 
 ```R
-read.table("UCI-HAR-tidy.txt")
+read.table("UCI_HAR_tidy.txt")
 ```
 
 #### CodeBook.md
