@@ -29,24 +29,20 @@ combined_train_test <- rbind(train_y_sub_x, test_y_sub_x)
 #2.1 Read in feature names from features file
 feature_names <- read.table("features.txt")
 
-#2.2 Remove unwanted columns, so now we just have the names
-#feature_names <- feature_names[,2]
-
-#2.3 Remove unwanted characters from the names
-#feature_names_valid <- make.names(gsub("(\\(\\))|\\(|\\)", "", feature_names[,2]))
+#2.2 Remove unwanted characters from the names
 feature_names_valid <- make.names(feature_names[,2])
 
-#2.4 Get rows which now have .mean. or .std. using regular expression EXPLAIN WHY ONLY THESE ONES Take it to NOT mean also the meanFreq
+#2.3 Get rows which now have .mean. or .std. using regular expression
 col_nums <- grep("\\.mean\\.|\\.std\\.",feature_names_valid)
 
-#2.5 Get the tidy names we're interested in 
+#2.4 Get the tidy names we're interested in 
 tidy_feature_names <- feature_names_valid[col_nums]
 
-#2.6 Tidy them further
+#2.5 Tidy them further
 tidy_feature_names <- gsub("(\\.\\.\\.)|(\\.\\.)", ".", tidy_feature_names)
 tidy_feature_names <- gsub("\\.$", "", tidy_feature_names)
 
-#2.5 Select only these columns from the merged dataset 
+#2.6 Select only these columns from the merged dataset 
 # - Add 2 to shift it by two columns as we added to columns to the front of our data frame earlier for Activity & Subject
 cols <- c(1,2, col_nums+2)
 mean_std_data <- combined_train_test[,cols]
