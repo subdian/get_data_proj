@@ -1,12 +1,16 @@
-# DATA DICTIONARY - UCI-HAR TIDY DATA SET
+# Codebook for UCI-HAR tidy data set
 
-```Subject		
-	Subject identifier
+This document outlines the data included in this data set. The first two variables are described separately, whereas the remaining 66 variables which were derived from the original UCI-HAR dataset are described together for brevity.
+
+```
+	Subject		
+		Subject identifier
 			1...147		Integer representing the subject 
 ```			
 
-```Activity
-	Activity for which the measurement was made
+```
+	Activity
+		Activity for which the measurement was made
 			One of LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
 ```
 
@@ -21,11 +25,12 @@ The remaining variables below were derived from the origin UCI-HAR data set, and
 >	'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions. 
 
 These data were further processed as follows:
-	First, everything except the mean and std deviations measurements of the original data was discarded. Only those data which contained mean() or std() were kept in the new data set
+
+First, everything except the mean and std deviations measurements of the original data was discarded. Only those data which contained mean() or std() were kept in the new data set
  
-	Next, the original observations were average for each group of activity and subject. So the values below represent averages of the original data
+Next, the original observations were average for each group of activity and subject. So the values below represent averages of the original data
 
-
+```
 	tBodyAcc.mean.X 
 	tBodyAcc.mean.Y 
 	tBodyAcc.mean.Z 
@@ -92,3 +97,4 @@ These data were further processed as follows:
 	fBodyBodyGyroMag.std     
 	fBodyBodyGyroJerkMag.mean
 	fBodyBodyGyroJerkMag.std 
+```
