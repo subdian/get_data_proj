@@ -5,7 +5,7 @@ This document outlines the data included in this data set. The first two variabl
 ```
 	Subject		
 		Subject identifier
-			1...147		Integer representing the subject 
+			1...30		Integer representing the subject 
 ```			
 
 ```
