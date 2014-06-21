@@ -19,9 +19,9 @@ The remaining variables below were derived from the origin UCI-HAR data set, and
 	'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions. 
 
 These data were further processed as follows:
- First, everything except the mean and std deviations measurements of the original data was discarded. Only those data which contained mean() or std() were kept in the new data set
+	First, everything except the mean and std deviations measurements of the original data was discarded. Only those data which contained mean() or std() were kept in the new data set
  
- Next, the original observations were average for each group of activity and subject. So the values below represent averages of the original data
+	Next, the original observations were average for each group of activity and subject. So the values below represent averages of the original data
 
 
 tBodyAcc.mean.X
